@@ -22,14 +22,19 @@ function setupNavigation() {
     const link = target.closest('a')
     
     if (link && link.href) {
-      const url = new URL(link.href)
-      
-      // Only handle same-origin links that aren't hash links
-      if (url.origin === window.location.origin && !url.hash) {
-        e.preventDefault()
-        window.history.pushState({}, '', url.pathname)
-        router()
-        window.scrollTo(0, 0)
+      try {
+        const url = new URL(link.href)
+        
+        // Only handle same-origin links that aren't hash links
+        if (url.origin === window.location.origin && !url.hash) {
+          e.preventDefault()
+          window.history.pushState({}, '', url.pathname)
+          router()
+          window.scrollTo(0, 0)
+        }
+      } catch (error) {
+        // Invalid URL, let default navigation handle it
+        console.error('Invalid URL:', error)
       }
     }
   })
