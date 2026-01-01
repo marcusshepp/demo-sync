@@ -15,7 +15,7 @@ app.innerHTML = `
       <div class="hidden md:flex items-center gap-8">
         <a href="#services" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Services</a>
         <a href="#results" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Results</a>
-        <a href="#about" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">About</a>
+        <a href="/about.html" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">About</a>
         <a href="#contact" class="btn-primary !py-3 !px-6 !text-base">Get Started</a>
       </div>
     </div>
@@ -229,7 +229,7 @@ app.innerHTML = `
         <div class="flex items-center gap-8 text-slate-400">
           <a href="#services" class="hover:text-white transition-colors">Services</a>
           <a href="#results" class="hover:text-white transition-colors">Results</a>
-          <a href="#about" class="hover:text-white transition-colors">About</a>
+          <a href="/about.html" class="hover:text-white transition-colors">About</a>
           <a href="#contact" class="hover:text-white transition-colors">Contact</a>
         </div>
         <div class="text-slate-500 text-sm">© 2024 SyncLC. All rights reserved.</div>
